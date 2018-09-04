@@ -22,11 +22,11 @@ VERSION = "0.0.5"
 
 # What packages are required for this module to be executed?
 REQUIRED = [
-    'colorama', 'pymysql_wrapper'
+    'colorama', 'pymysql_wrapper==0.0.5'
 ]
 
 DEPENDENCY = [
-  'git+https://github.com/RafaelGSS/pymysql.wrapper/tree/master#egg=pymysql_wrapper'   
+  'git+https://github.com/RafaelGSS/pymysql.wrapper#egg=pymysql_wrapper-0.0.5-py3.6'   
 ]
 
 # What packages are optional?
