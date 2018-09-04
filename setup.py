@@ -22,7 +22,11 @@ VERSION = "0.0.5"
 
 # What packages are required for this module to be executed?
 REQUIRED = [
-    'colorama', 'git+ssh://git@github.com/RafaelGSS/pymysql.wrapper'
+    'colorama', 'pymysql.wrapper'
+]
+
+DEPENDENCY = [
+  'git+https://github.com/RafaelGSS/pymysql.wrapper'   
 ]
 
 # What packages are optional?
@@ -111,6 +115,7 @@ setup(
     #     'console_scripts': ['mycli=mymodule:cli'],
     # },
     install_requires=REQUIRED,
+    dependency_links=DEPENDENCY,
     extras_require=EXTRAS,
     include_package_data=True,
     license='MIT',
