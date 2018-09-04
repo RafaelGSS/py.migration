@@ -1,5 +1,4 @@
-from migrations.base.fields import *
-from migrations.base import SQLPredef
+from pygration import SQLPredef
 
 
 class Model(object):

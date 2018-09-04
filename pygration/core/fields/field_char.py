@@ -1,4 +1,4 @@
-from migrations.base.fields import Field
+from pygration import Field
 
 
 class FieldChar(Field):

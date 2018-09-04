@@ -1,5 +1,5 @@
 import sys, inspect
-from migrations._29082018_example import Example
+from ._29082018_example import Example
 
 migrations = []
 

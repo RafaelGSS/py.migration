@@ -1,5 +1,5 @@
-from migrations.base.model import Model
-from migrations.base.fields import *
+from pygration.core.model import Model
+from pygration.core.fields import *
 
 
 class Example(Model):

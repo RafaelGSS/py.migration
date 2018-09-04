@@ -1,7 +1,13 @@
-from migrations.base import Output
+from .core import Output
 
 
-class Migration(object):
+class Pygration(object):
+    """
+    Class that receive a connection and migration
+
+    connection is a connection database
+    migrations is a list of models
+    """
     def __init__(self, connection, migrations):
         self.__migrations = migrations
         self.__connection = connection
@@ -11,7 +17,8 @@ class Migration(object):
         for model in self.__migrations:
             md = model()
             try:
-                row = self.__connection.execute_many(md.get_sql().split(';'))
+                for sql in md.get_sql().split(';'):
+                    row = self.__connection.execute(sql)
                 self.__connection.commit()
                 out.append_success(type(md).__name__)
             except Exception as e:

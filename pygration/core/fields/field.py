@@ -1,4 +1,4 @@
-from migrations.base import SQLPredef
+from pygration import SQLPredef
 
 
 class Field(object):
