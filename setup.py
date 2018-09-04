@@ -22,12 +22,12 @@ VERSION = "0.0.2"
 
 # What packages are required for this module to be executed?
 REQUIRED = [
-    'colorama', 'pymysql_wrapper'
+    'colorama'
 ]
 
-DEPENDENCY = [
-  'https://github.com/RafaelGSS/pymysql_wrapper/tarball/master#egg=pymysql_wrapper'   
-]
+# DEPENDENCY = [
+#   'https://github.com/RafaelGSS/pymysql_wrapper/tarball/master#egg=pymysql_wrapper'   
+# ]
 
 # What packages are optional?
 EXTRAS = {
@@ -126,7 +126,6 @@ setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy'
     ],
     # $ setup.py publish support.
