@@ -1,4 +1,4 @@
-from pygration import SQLPredef
+from pygration.core import SQLPredef
 
 
 class Model(object):
