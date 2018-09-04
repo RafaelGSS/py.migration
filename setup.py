@@ -26,7 +26,7 @@ REQUIRED = [
 ]
 
 DEPENDENCY = [
-  'git+https://github.com/RafaelGSS/pymysql.wrapper#egg=pymysql_wrapper-0.0.5-py3.6'   
+  'git+https://github.com/RafaelGSS/pymysql_wrapper#egg=pymysql_wrapper-0.0.5-py3.6'   
 ]
 
 # What packages are optional?
