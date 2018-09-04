@@ -1,4 +1,4 @@
-from pygration import Field
+from .field import Field
 
 
 class FieldTimestamp(Field):
