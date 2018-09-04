@@ -22,7 +22,7 @@ VERSION = "0.0.5"
 
 # What packages are required for this module to be executed?
 REQUIRED = [
-    'colorama', 'git+https://github.com/RafaelGSS/pymysql.wrapper'
+    'colorama', 'git+ssh://git@github.com/RafaelGSS/pymysql.wrapper'
 ]
 
 # What packages are optional?
