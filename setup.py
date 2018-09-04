@@ -25,9 +25,8 @@ REQUIRED = [
     'colorama'
 ]
 
-# DEPENDENCY = [
-#   'https://github.com/RafaelGSS/pymysql_wrapper/tarball/master#egg=pymysql_wrapper'   
-# ]
+DEPENDENCY = [
+]
 
 # What packages are optional?
 EXTRAS = {
