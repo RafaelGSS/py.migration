@@ -22,7 +22,7 @@ VERSION = "0.0.5"
 
 # What packages are required for this module to be executed?
 REQUIRED = [
-    'colorama', 'pymysql_wrapper'
+    'colorama'
 ]
 
 DEPENDENCY = [
