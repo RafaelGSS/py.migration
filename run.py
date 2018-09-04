@@ -1,6 +1,6 @@
 from migrations import migrations
 from migrations.base import Migration
-from database.database import PySession
+from pymysql_wrapper import PySession
 from env import DB_MIGRATION_DATABASE, DB_MIGRATION_PASSWORD, DB_MIGRATION_HOST, DB_MIGRATION_USER, DB_MIGRATION_PORT
 
 
