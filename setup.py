@@ -18,11 +18,11 @@ URL = 'https://github.com/RafaelGSS/py.migration'
 EMAIL = 'rafael.nunu@hotmail.com'
 AUTHOR = 'Rafael Gonzaga'
 REQUIRES_PYTHON = '>=3.4.0'
-VERSION = "0.0.5"
+VERSION = "0.0.2"
 
 # What packages are required for this module to be executed?
 REQUIRED = [
-    'colorama', 'pymysql_wrapper==0.0.5'
+    'colorama', 'pymysql_wrapper'
 ]
 
 DEPENDENCY = [
@@ -114,8 +114,8 @@ setup(
     # entry_points={
     #     'console_scripts': ['mycli=mymodule:cli'],
     # },
-    install_requires=REQUIRED,
     dependency_links=DEPENDENCY,
+    install_requires=REQUIRED,
     extras_require=EXTRAS,
     include_package_data=True,
     license='MIT',
