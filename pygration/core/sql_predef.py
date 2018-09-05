@@ -1,12 +1,15 @@
 class SQLPredef(object):
     drop_table_if_exist = 'DROP TABLE IF EXISTS `{}`;\n'
     create_table = 'CREATE TABLE `{}` (\n{}\n)'
+    create_table_if_not_exist = 'CREATE TABLE IF NOT EXISTS `{}` (\n{}\n)'
     column_standard = '`{}` {}({}) {}'
     column_without_lenght = '`{}` {} {}'
 
     @staticmethod
-    def get_default_sql_top():
-        return SQLPredef.drop_table_if_exist + SQLPredef.create_table
+    def get_default_sql_top(drop_table=False):
+        if drop_table:
+            return SQLPredef.drop_table_if_exist + SQLPredef.create_table
+        return SQLPredef.create_table_if_not_exist
 
     @staticmethod
     def get_column_standard(name_column, type_column, length, args):
