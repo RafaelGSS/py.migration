@@ -22,7 +22,7 @@ class Model(object):
         # Build top of model
         sql = self.__sql_migration.format(
             self._table_name,
-            self._table_name,
+            # self._table_name,
             columns
         )
 
